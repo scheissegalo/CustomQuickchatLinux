@@ -200,6 +200,7 @@ void CustomQuickchat::display_speechToTextSettings()
 	auto micCalibrationTimeout_cvar =       GetCvar(Cvars::micCalibrationTimeout);
 	auto micEnergyThreshold_cvar =          GetCvar(Cvars::micEnergyThreshold);
 	auto websocket_port_cvar =              GetCvar(Cvars::websocket_port);
+	auto disableAutoServerStart_cvar =      GetCvar(Cvars::disableAutoServerStart);
 
 	if (!micEnergyThreshold_cvar)
 		return;
@@ -228,6 +229,19 @@ void CustomQuickchat::display_speechToTextSettings()
 	if (ImGui::InputInt("Port number", &websocket_port))
 	{
 		websocket_port_cvar.setValue(websocket_port);
+	}
+
+	GUI::Spacing();
+
+	// Manual server management option
+	bool disableAutoServerStart = disableAutoServerStart_cvar.getBoolValue();
+	if (ImGui::Checkbox("Disable automatic server startup", &disableAutoServerStart))
+	{
+		disableAutoServerStart_cvar.setValue(disableAutoServerStart);
+	}
+	if (ImGui::IsItemHovered())
+	{
+		ImGui::SetTooltip("Enable this if you want to run the speech-to-text server manually (e.g., on Linux host machine)");
 	}
 
 	GUI::Spacing();

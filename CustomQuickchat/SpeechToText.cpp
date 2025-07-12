@@ -111,9 +111,17 @@ void CustomQuickchat::start_websocket_stuff(bool onLoad)
 bool CustomQuickchat::start_websocket_server()
 {
 	auto websocket_port_cvar = GetCvar(Cvars::websocket_port);
+	auto disableAutoServerStart_cvar = GetCvar(Cvars::disableAutoServerStart);
 	if (!websocket_port_cvar) return false;
 	int websocket_port = websocket_port_cvar.getIntValue();
 
+	// Check if automatic server startup is disabled
+	if (disableAutoServerStart_cvar && disableAutoServerStart_cvar.getBoolValue())
+	{
+		LOG("Automatic speech-to-text server startup is disabled. Assuming server is running manually on port {}", websocket_port);
+		connecting_to_ws_server = true;
+		return true;
+	}
 
 	// start websocket sever (spawn python process)
 	std::string command = CreateCommandString(speechToTextExePath.string(), { std::to_string(websocket_port) });	// args: py exe, websocket port
@@ -147,6 +155,15 @@ bool CustomQuickchat::start_websocket_server()
 
 void CustomQuickchat::stop_websocket_server()
 {
+	auto disableAutoServerStart_cvar = GetCvar(Cvars::disableAutoServerStart);
+	
+	// If automatic server startup is disabled, we didn't start a process to stop
+	if (disableAutoServerStart_cvar && disableAutoServerStart_cvar.getBoolValue())
+	{
+		LOG("Automatic server startup is disabled. No process to stop.");
+		return;
+	}
+
 	Process::terminate_created_process(stt_python_server_process);
 	LOG("Stopped websocket server using TerminateProcess...");
 }

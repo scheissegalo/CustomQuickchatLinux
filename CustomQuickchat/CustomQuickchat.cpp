@@ -37,6 +37,7 @@ void CustomQuickchat::onLoad()
     auto team_chats_in_last_chat_cvar =         RegisterCvar_Bool(Cvars::team_chats_in_last_chat,       true);
     auto randomize_sarcasm_cvar =               RegisterCvar_Bool(Cvars::randomize_sarcasm,             true);
     auto uncensorChats_cvar =                   RegisterCvar_Bool(Cvars::uncensorChats,                 true);
+    auto disableAutoServerStart_cvar =          RegisterCvar_Bool(Cvars::disableAutoServerStart,        false);
 
     removeTimestamps_cvar.bindTo(m_removeTimestamps);
     uncensorChats_cvar.bindTo(m_uncensorChats);

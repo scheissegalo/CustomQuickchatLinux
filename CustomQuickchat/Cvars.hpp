@@ -30,6 +30,7 @@ namespace Cvars
     constexpr CvarData team_chats_in_last_chat =        CVAR("team_chats_in_last_chat",         "include team chats in search for last chat");
     constexpr CvarData randomize_sarcasm =              CVAR("randomize_sarcasm",               "randomize the sarcasm text effect");
     constexpr CvarData uncensorChats =                  CVAR("uncensor_chats",                  "uncensor chats");
+    constexpr CvarData disableAutoServerStart =         CVAR("disable_auto_server_start",       "disable automatic speech-to-text server startup (for manual server management)");
 
     // numbers
     constexpr CvarData sequenceTimeWindow =             CVAR("button_sequence_time_window",     "time window given for button sequence macros");
