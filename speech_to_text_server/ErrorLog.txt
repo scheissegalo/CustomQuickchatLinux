@@ -17,3 +17,62 @@
 2025-07-11 23:16:44,484 [INFO] Starting WebSocket server on port 8003 ...
 2025-07-11 23:16:44,511 [INFO] server listening on [::1]:8003
 2025-07-11 23:16:44,511 [INFO] server listening on 127.0.0.1:8003
+2025-07-12 18:56:09,403 [INFO] Initializing microphone...
+2025-07-12 18:56:10,437 [INFO] Microphone initialized successfully.
+2025-07-12 18:56:10,476 [INFO] Starting WebSocket server on port 8003 ...
+2025-07-12 18:56:10,491 [INFO] server listening on [::1]:8003
+2025-07-12 18:56:10,491 [INFO] server listening on 127.0.0.1:8003
+2025-07-12 18:58:28,140 [INFO] connection open
+2025-07-12 18:58:28,140 [INFO] Client connected
+2025-07-12 19:00:04,965 [INFO] Client disconnected... shutting down.
+2025-07-12 19:00:04,965 [INFO] Stopping server...
+2025-07-12 19:00:04,965 [INFO] server closing
+2025-07-12 19:00:04,965 [INFO] server closed
+2025-07-12 19:00:04,965 [INFO] Server shut down successfully.
+2025-07-12 19:06:00,046 [INFO] Initializing microphone...
+2025-07-12 19:06:00,963 [INFO] Microphone initialized successfully.
+2025-07-12 19:06:00,991 [INFO] Starting WebSocket server on port 8003 ...
+2025-07-12 19:06:00,998 [INFO] server listening on [::1]:8003
+2025-07-12 19:06:00,999 [INFO] server listening on 127.0.0.1:8003
+2025-07-12 19:06:38,013 [INFO] connection open
+2025-07-12 19:06:38,013 [INFO] Client connected
+2025-07-12 19:06:46,087 [INFO] Stopping server...
+2025-07-12 19:06:46,087 [INFO] server closing
+2025-07-12 19:06:46,087 [INFO] server closed
+2025-07-12 19:06:46,088 [INFO] Server shut down successfully.
+2025-07-12 19:08:41,354 [INFO] Initializing microphone...
+2025-07-12 19:08:42,274 [INFO] Microphone initialized successfully.
+2025-07-12 19:08:42,298 [INFO] Starting WebSocket server on port 8003 ...
+2025-07-12 19:08:42,306 [INFO] server listening on [::1]:8003
+2025-07-12 19:08:42,306 [INFO] server listening on 127.0.0.1:8003
+2025-07-12 19:09:15,910 [INFO] connection open
+2025-07-12 19:09:15,910 [INFO] Client connected
+2025-07-12 20:34:53,328 [INFO] Client disconnected... shutting down.
+2025-07-12 20:34:53,328 [INFO] Stopping server...
+2025-07-12 20:34:53,328 [INFO] server closing
+2025-07-12 20:34:53,328 [INFO] server closed
+2025-07-12 20:34:53,328 [INFO] Server shut down successfully.
+2025-07-12 20:46:05,044 [INFO] Initializing microphone...
+2025-07-12 20:46:05,985 [INFO] Microphone initialized successfully.
+2025-07-12 20:46:06,019 [INFO] Starting WebSocket server on port 8003 ...
+2025-07-12 20:46:06,027 [INFO] server listening on 127.0.0.1:8003
+2025-07-12 20:46:06,027 [INFO] server listening on [::1]:8003
+2025-07-12 20:51:19,487 [INFO] connection open
+2025-07-12 20:51:19,487 [INFO] Client connected
+2025-07-12 20:51:36,708 [INFO] Client disconnected... shutting down.
+2025-07-12 20:51:36,708 [INFO] Stopping server...
+2025-07-12 20:51:36,708 [INFO] server closing
+2025-07-12 20:51:36,708 [INFO] server closed
+2025-07-12 20:51:36,708 [INFO] Server shut down successfully.
+2025-07-12 20:51:43,602 [INFO] Initializing microphone...
+2025-07-12 20:51:44,530 [INFO] Microphone initialized successfully.
+2025-07-12 20:51:44,557 [INFO] Starting WebSocket server on port 8003 ...
+2025-07-12 20:51:44,564 [INFO] server listening on 127.0.0.1:8003
+2025-07-12 20:51:44,564 [INFO] server listening on [::1]:8003
+2025-07-12 20:52:18,429 [INFO] connection open
+2025-07-12 20:52:18,429 [INFO] Client connected
+2025-07-12 21:20:30,172 [INFO] Client disconnected... shutting down.
+2025-07-12 21:20:30,172 [INFO] Stopping server...
+2025-07-12 21:20:30,172 [INFO] server closing
+2025-07-12 21:20:30,172 [INFO] server closed
+2025-07-12 21:20:30,173 [INFO] Server shut down successfully.
